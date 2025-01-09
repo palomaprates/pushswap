@@ -78,16 +78,14 @@ int main()
 	Node *list = NULL;
 	int temp;
 	add_back(&list, 1);
-	// add_back(&list, 2);
+	add_back(&list, 2);
 	printf("printando lista original\n");
 	to_print_list(&list);
 	printf("=========================\n");
-	//inverter a posição dos 2 elementos
 	printf("printando lista alterada\n");
 	to_print_list(&list);
 	int size_list = get_list_size(&list);
-	// printf("size of list %d\n", size_list);
-	// sa(&list);
+
 }
 
 
