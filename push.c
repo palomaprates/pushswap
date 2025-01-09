@@ -7,17 +7,43 @@ typedef struct node
 	struct node *next;
 }Node;
 
-void add_front(Node **listInit, int nb)
+void add_back(Node **list, int nb)
 {
 	Node *new;
 	new = malloc(sizeof(Node));
+	Node *aux;
 	if (new)
 	{
 		new->value = nb;
-		new->next = *listInit;
-		*listInit = new;
+		new->next = NULL;
+		if (!*list)
+		{
+			*list = new; 
+			aux = *list;
+			new->next = aux->next;
+		}
+		else 
+		{
+			aux->next = new;
+			aux = aux->next;
+		}
+	}
+	else
+	{
+		printf("erro ao alocar memória");
 	}
 }
+void remove_front(Node **listInit)
+{
+	Node *aux;
+	aux = *listInit;
+	if (aux)
+	{
+		aux = aux->next;
+		*listInit = aux;
+	}
+}
+
 void print_list(Node **listInit)
 {
 	Node *aux;
@@ -32,9 +58,17 @@ void print_list(Node **listInit)
 
 int main()
 {
-	Node *list = NULL;
-	add_front(&list, 1);
-	add_front(&list, 2);
-	add_front(&list, 3);
-	print_list(&list);
+	Node *listA = NULL;
+	Node *listB = NULL;
+	add_back(&listA, 1);
+	add_back(&listA, 2);
+	add_back(&listA, 3);
+
+	add_back(&listB, 7);
+	add_back(&listB, 8);
+	add_back(&listB, 9);
+	add_back(&listB, 10);
+
+	remove_front(&listB);
+	print_list(&listB);
 }
