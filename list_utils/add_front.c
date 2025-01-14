@@ -1,4 +1,4 @@
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void add_front(Node **listInit, int nb)
 {
