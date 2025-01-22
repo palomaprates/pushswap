@@ -1,5 +1,4 @@
 #include "../push_swap.h"
-#include "get_list_size.c"
 void add_back(Node **list, int nb)
 {
 	Node *new;

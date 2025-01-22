@@ -1,7 +1,4 @@
 #include "push_swap.h"
-#include "list_utils/add_back.c"
-#include "list_utils/remove_front.c"
-
 
 void rotate(Node **listInit)
 {
