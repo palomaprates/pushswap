@@ -8,9 +8,6 @@
 #include "list_utils/get_last_node.c"
 #include "list_utils/get_first_node.c"
 
-
-
-
 void rotate(Node **listInit)
 {
 	Node *aux;
@@ -25,20 +22,4 @@ void rotate(Node **listInit)
 	add_front(listInit, last);
 	remove_back(listInit);
 	add_back(listInit, first);
-}
-int main()
-{
-	Node *list = NULL;
-	add_back(&list, 1);
-	add_back(&list, 2);
-	add_back(&list, 3);
-	add_back(&list, 4);
-
-
-	printf("before change\n");
-	print_list(&list);
-	rotate(&list);
-	printf("after change\n");
-	print_list(&list);
-
 }
