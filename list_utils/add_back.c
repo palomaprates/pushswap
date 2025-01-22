@@ -1,6 +1,5 @@
 #include "../push_swap.h"
 #include "get_list_size.c"
-// #include "print_list.c"
 void add_back(Node **list, int nb)
 {
 	Node *new;
@@ -29,15 +28,3 @@ void add_back(Node **list, int nb)
 		}
 	}
 }
-
-// int main()
-// {
-// 	Node *list = NULL;
-// 	add_back(&list, 0);
-// 	add_back(&list, 1);
-// 	add_back(&list, 2);
-// 	add_back(&list, 3);
-
-// 	printf("\nLISTA:\n");
-// 	print_list(&list);
-// }
