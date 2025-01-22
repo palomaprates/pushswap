@@ -1,4 +1,5 @@
-#include "push_swap.h"
+#include "../push_swap.h"
+
 void print_list(Node **listInit)
 {
 	Node *aux;

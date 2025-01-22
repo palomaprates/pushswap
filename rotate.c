@@ -3,7 +3,7 @@
 #include "list_utils/remove_back.c"
 #include "list_utils/add_front.c"
 #include "list_utils/print_list.c"
-#include "list_utils/get_list_size.c"
+// #include "list_utils/get_list_size.c"
 #include "list_utils/remove_front.c"
 #include "list_utils/get_last_node.c"
 #include "list_utils/get_first_node.c"
