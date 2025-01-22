@@ -1,25 +1,14 @@
 #include "push_swap.h"
 #include "list_utils/add_back.c"
-#include "list_utils/remove_back.c"
-#include "list_utils/add_front.c"
-#include "list_utils/print_list.c"
-// #include "list_utils/get_list_size.c"
 #include "list_utils/remove_front.c"
-#include "list_utils/get_last_node.c"
-#include "list_utils/get_first_node.c"
+
 
 void rotate(Node **listInit)
 {
 	Node *aux;
 	int first;
 	int last;
-	aux = get_first_node(listInit);
-	first = aux->value;
-	aux = get_last_node(listInit);
-	last = aux->value;
-
+	aux = *listInit;
 	remove_front(listInit);
-	add_front(listInit, last);
-	remove_back(listInit);
-	add_back(listInit, first);
+	add_back(listInit, aux->value);
 }
