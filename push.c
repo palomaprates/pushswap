@@ -13,24 +13,3 @@ void push(Node **list, Node **listB)
 	remove_front(list);
 	add_front(listB, aux->value);
 }
-
-int main()
-{
-	Node *list = NULL;
-	Node *listB = NULL;
-	add_back(&list, 1);
-	add_back(&list, 2);
-	add_back(&list, 3);
-	add_back(&list, 4);
-
-	printf("lista a antes\n");
-	print_list(&list);
-	printf("lista b antes\n");
-	print_list(&listB);
-	push(&list, &listB);
-	printf("=================\n");
-	printf("lista a agora\n");
-	print_list(&list);
-	printf("lista b agora\n");
-	print_list(&listB);
-}
