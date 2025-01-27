@@ -4,6 +4,7 @@ int create_stack(int size, char **str, Node **list)
 {
 	int i; 
 	long long result;
+	
 	i = 1;
 	while (i < size)
 	{
