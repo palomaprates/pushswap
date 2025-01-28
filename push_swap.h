@@ -9,6 +9,7 @@
 typedef struct node
 {
 	int value;
+    int index; 
 	struct node *next;
 }Node;
 
@@ -20,6 +21,8 @@ void add_front(Node **listInit, int nb);
 int get_list_size(Node **listInit);
 
 void print_list(Node **listInit);
+
+void print_index(Node **listInit);
 
 void remove_back(Node **listInit);
 
