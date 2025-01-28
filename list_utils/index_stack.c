@@ -10,16 +10,16 @@ void	indexStack(Node **list)
 	aux1 = *list;
 	 while (aux1)
 	 {
-		int rank = 0;
+		int index = 0;
 		aux2 = *list;
 
 		while (aux2)
 		{
 			if (aux2->value < aux1->value)
-					rank++;
+					index++;
 			aux2 = aux2->next;
 		}
-		aux1->index = rank;
+		aux1->index = index;
 		aux1 = aux1->next;
     }
 }
