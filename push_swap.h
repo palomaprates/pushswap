@@ -28,6 +28,8 @@ void remove_back(Node **listInit);
 
 void remove_front(Node **listInit);
 
+void	indexStack(Node **list);
+
 Node *get_last_node(Node **listInit);
 
 Node *get_first_node(Node **listInit);
