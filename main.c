@@ -1,28 +1,68 @@
 #include "push_swap.h"
 
-void indexArray(int *arr, int size, int *result) {
-    for (int i = 0; i < size; i++) {
-        int rank = 0;
-        for (int j = 0; j < size; j++) {
-            if (arr[j] < arr[i]) {
-                rank++;
-            }
-        }
-        result[i] = rank;
+void	indexStack(Node **list)
+{
+
+	Node *aux1;
+	Node *aux2;
+	int	rank;
+
+	aux1 = *list;
+	// while (aux1)
+	// {
+	// 	rank = 0;
+	// 	aux2 = *list;
+	// 	while(aux2)
+	// 	{
+	// 		if(aux2->value < aux1->value)
+	// 			rank++;
+	// 		aux2 = aux2->next;
+	// 	}
+	// 	aux1->index = rank;
+	// 	aux1 = aux1->next;
+	// }
+	 while (aux1)
+	 {
+		int rank = 0;
+		aux2 = *list;
+
+		while (aux2)
+		{
+			if (aux2->value < aux1->value)
+					rank++;
+			aux2 = aux2->next;
+		}
+		aux1->index = rank;
+		aux1 = aux1->next;
     }
+	//indexar os elementos da lista, ao inves de indexar o array.
 }
+
+// int	*create_array(Node **list, int size)
+// {
+// 	Node *aux;
+// 	int	i;
+// 	int *arr;
+
+// 	aux = *list;
+// 	i = 1;
+// 	arr = malloc(sizeof(int) * size);
+// 	while (aux)
+// 	{
+// 		arr[i] = aux->value;
+// 		aux = aux->next;
+// 		i++;
+// 	}
+// 	return (arr);
+// }
 int main(int argc, char *argv[])
 {
-	int i;
 	int j;
+	int size;
+	int *result;
 	Node *list;
-	list = NULL;
-	Node *aux = list;
-	int size = argc - 1;
-	int arr[size];
-	int result[size];
-	i = 1;
 	j = 0;
+	list = NULL;
 	if (argc <= 1)
 		return (0);
 	if (!create_stack(argc, argv, &list))
@@ -30,21 +70,13 @@ int main(int argc, char *argv[])
 		printf("Error");
 		return (0);
 	}
-	while (aux)
-	{
-		arr[i] = aux->value;
-		aux = aux->next;
-		i++;
-	}
-	indexArray(arr, size, result);
-
+	size = get_list_size(&list);
+	printf("size %d\n", size);
+	result = malloc(sizeof(int) * size);
 	printf("Old\n");
 	print_list(&list);
+	indexStack(&list);
 	printf("New\n");
-	while (j < size)
-	{
-		printf("%d ", result[j]);
-		j++;
-	}
+	print_index(&list);
 	printf("\n");
 }
