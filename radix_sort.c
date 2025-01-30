@@ -1,35 +1,5 @@
 #include "push_swap.h"
 
-int	get_binary_len(int nb, int size)
-{
-	int	i;
-	int len;
-
-	i = 0;
-	len = 0;
-	while (i < size)
-	{
-		if (nb % 2 != 0)
-		{
-			nb = nb / 2;
-			len++;
-		}
-		i++;
-	}
-	return len;
-}
-void push_all(Node **list1, Node **list2, char c)
-{
-	int size;
-	int	i;
-	size = get_list_size(list1);
-	i = 0;
-	while (i < size)
-	{
-		push(list1, list2, c);
-		i++;
-	}
-}
 void	radix_sort(Node **list_a)
 {
 	int bit;
@@ -40,7 +10,7 @@ void	radix_sort(Node **list_a)
 	int binary_len;
 	Node *list_b;
 	Node *aux;
-	
+
 	j = 0;
 	size = get_list_size(list_a);
 	aux = *list_a;
@@ -66,5 +36,4 @@ void	radix_sort(Node **list_a)
 		i++;
 		binary_len = get_binary_len(nb, size);
 	}
-
 }
