@@ -48,9 +48,9 @@ int	is_str_number(char *str);
 
 //==========MOVEMENTS=====================
 
-void push(Node **list, Node **listB);
+void push(Node **list, Node **listB, char c);
 
-void rotate(Node **list);
+void rotate(Node **list, char c);
 
 void swap(Node **listInit);
 
