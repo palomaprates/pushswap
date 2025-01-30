@@ -27,7 +27,6 @@ void add_back(Node **list, int value, int index)
 			}
 			else
 				aux = aux->next;
-			new->index = new->index + 1;
 		}
 	}
 }
