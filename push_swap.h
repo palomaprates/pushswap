@@ -14,9 +14,10 @@ typedef struct node
 }Node;
 
 // ==========LIST UTILS==================
-void add_back(Node **list, int nb);
 
-void add_front(Node **listInit, int nb);
+void add_back(Node **list, int value, int index);
+
+void add_front(Node **listInit, int value, int index);
 
 int get_list_size(Node **listInit);
 
@@ -35,6 +36,8 @@ Node *get_last_node(Node **listInit);
 Node *get_first_node(Node **listInit);
 
 //==========UTILS=========================
+char	*ft_itoa(int n);
+
 long long	ft_atoi(const char *str);
 
 int	ft_strlen(char *str);
@@ -54,5 +57,7 @@ void swap(Node **listInit);
 //===========STACK=========================
 
 int create_stack(int size, char **str, Node **list);
+
+void	radix_sort(Node **list_a);
 
 #endif
