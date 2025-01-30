@@ -23,8 +23,6 @@ int get_list_size(Node **listInit);
 
 void print_list(Node **listInit);
 
-void print_index(Node **listInit);
-
 void remove_back(Node **listInit);
 
 void remove_front(Node **listInit);
@@ -36,7 +34,6 @@ Node *get_last_node(Node **listInit);
 Node *get_first_node(Node **listInit);
 
 //==========UTILS=========================
-char	*ft_itoa(int n);
 
 long long	ft_atoi(const char *str);
 
