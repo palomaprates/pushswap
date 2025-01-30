@@ -7,5 +7,5 @@ void rotate(Node **listInit)
 	int last;
 	aux = *listInit;
 	remove_front(listInit);
-	add_back(listInit, aux->value);
+	add_back(listInit, aux->value, 0);
 }

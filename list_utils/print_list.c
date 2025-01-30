@@ -6,7 +6,7 @@ void print_list(Node **listInit)
 	aux = *listInit;
 	while(aux)
 	{
-		printf("%d\n", aux->value);
+		printf("value: %d, index: %d\n", aux->value, aux->index);
 		aux = aux->next;
 	}
 }

@@ -7,5 +7,5 @@ void push(Node **list, Node **listB)
 	if (!*list)
 		return;
 	remove_front(list);
-	add_front(listB, aux->value);
+	add_front(listB, aux->value, 0);
 }

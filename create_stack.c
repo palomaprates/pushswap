@@ -4,7 +4,8 @@ int create_stack(int size, char **str, Node **list)
 {
 	int i; 
 	long long result;
-	
+	Node *aux;
+	aux = *list;
 	i = 1;
 	while (i < size)
 	{
@@ -13,7 +14,7 @@ int create_stack(int size, char **str, Node **list)
 		result = ft_atoi(str[i]);
 		if (result > INT_MAX || result < INT_MIN)
 			return (0);
-		add_back(list, result);
+		add_back(list, result, 0);
 		i++;
 	}
 	return (1);
