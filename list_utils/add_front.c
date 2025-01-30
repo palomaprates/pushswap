@@ -4,12 +4,10 @@
 void add_front(Node **listInit, int value, int index)
 {
 	Node *new;
-    int size;
-    int i;
-
 	new = malloc(sizeof(Node));
-    size = get_list_size(listInit);
-    i = 0;
+
+	if (!new)
+		return;
 	if (new)
 	{
 		new->value = value;
@@ -17,11 +15,6 @@ void add_front(Node **listInit, int value, int index)
 		new->next = *listInit;
 		*listInit = new;
 	}
-    while (i < size)
-    {
-        new->index = new->index + 1;
-        i++;
-    }
 }
 // int main()
 // {
