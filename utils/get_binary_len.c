@@ -1,3 +1,5 @@
+#include "../push_swap.h"
+
 int	get_binary_len(int nb, int size)
 {
 	int	i;

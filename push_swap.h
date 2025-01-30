@@ -19,19 +19,21 @@ void add_back(Node **list, int value, int index);
 
 void add_front(Node **listInit, int value, int index);
 
-int get_list_size(Node **listInit);
-
 void print_list(Node **listInit);
 
 void remove_back(Node **listInit);
 
 void remove_front(Node **listInit);
 
+void push_all(Node **list1, Node **list2, char c);
+
 void	indexStack(Node **list);
 
 Node *get_last_node(Node **listInit);
 
 Node *get_first_node(Node **listInit);
+
+int get_list_size(Node **listInit);
 
 //==========UTILS=========================
 
@@ -42,6 +44,8 @@ int	ft_strlen(char *str);
 int	is_number(int c);
 
 int	is_str_number(char *str);
+
+int	get_binary_len(int nb, int size);
 
 //==========MOVEMENTS=====================
 

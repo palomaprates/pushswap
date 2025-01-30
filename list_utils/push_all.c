@@ -1,3 +1,5 @@
+#include "../push_swap.h"
+
 void push_all(Node **list1, Node **list2, char c)
 {
 	int size;
