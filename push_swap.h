@@ -45,6 +45,8 @@ int	is_number(int c);
 
 int	is_str_number(char *str);
 
+int	is_duplicate(char **argv, int index);
+
 int	get_binary_len(int nb, int size);
 
 //==========MOVEMENTS=====================
