@@ -7,7 +7,7 @@ void add_back(Node **list, int value, int index)
 	int i;
 	int list_size;
 	i = -1;
-	list_size = get_list_size(list);
+	list_size = get_list_size(*list);
 	new = malloc(sizeof(Node));
 	if (!new)
 		return;
