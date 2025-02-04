@@ -9,7 +9,7 @@
 typedef struct node
 {
 	int value;
-    int index; 
+	int index;
 	struct node *next;
 }Node;
 
@@ -33,7 +33,7 @@ Node *get_last_node(Node **listInit);
 
 Node *get_first_node(Node **listInit);
 
-int get_list_size(Node **listInit);
+int get_list_size(Node *listInit);
 
 //==========UTILS=========================
 
@@ -55,12 +55,17 @@ void push(Node **list, Node **listB, char c);
 
 void rotate(Node **list, char c);
 
-void swap(Node **listInit);
+void reverse_rotate(Node **listInit, char c);
+
+void swap(Node **listInit, char c);
 
 //===========STACK=========================
 
 int create_stack(int size, char **str, Node **list);
 
 void	radix_sort(Node **list_a);
+
+void	sort_small_stack(Node **list_a);
+
 
 #endif
