@@ -1,16 +1,14 @@
 #include "../push_swap.h"
 
-int get_list_size(Node **listInit)
+int get_list_size(Node *listInit)
 {
-	Node *aux;
-	if (!*listInit)
+	if (!listInit)
 		return (0);
-	aux = *listInit;
 	int i;
 	i = 0;
-	while(aux)
+	while(listInit)
 	{
-		aux = aux->next;
+		listInit = listInit->next;
 		i++;
 	}
 	return (i);
