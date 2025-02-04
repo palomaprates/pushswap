@@ -8,7 +8,7 @@ void rotate(Node **listInit, char c)
 	aux = *listInit;
 	remove_front(listInit);
 	add_back(listInit, aux->value, aux->index);
-	// write(1, "R", 1);
-	// write(1, &c, 1);
-	// write(1, "\n", 1);
+	write(1, "r", 1);
+	write(1, &c, 1);
+	write(1, "\n", 1);
 }
