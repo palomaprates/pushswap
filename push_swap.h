@@ -47,7 +47,7 @@ int	is_str_number(char *str);
 
 int	is_duplicate(char **argv, int index);
 
-int	get_binary_len(int nb, int size);
+int	get_binary_len(int nb);
 
 //==========MOVEMENTS=====================
 
@@ -63,9 +63,24 @@ void swap(Node **listInit, char c);
 
 int create_stack(int size, char **str, Node **list);
 
-void	radix_sort(Node **list_a);
+//============SORT===========================
 
 void	sort_small_stack(Node **list_a);
 
+//==============RADIX=========================
+
+void	radix_sort(Node **list_a, int size);
+
+//==============SORT UTILS====================
+
+int	get_bigger(Node *list_a, int size);
+
+int	get_binary_len(int nb);
+
+int	is_sorted(Node *list);
+
+int	is_bigger(Node *list);
+
+void	sort_list(Node **list_a, int size, int binary);
 
 #endif

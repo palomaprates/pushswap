@@ -1,20 +1,17 @@
 #include "../push_swap.h"
 
-int	get_binary_len(int nb, int size)
+int	get_binary_len(int nb)
 {
 	int	i;
 	int len;
 
 	i = 0;
 	len = 0;
-	while (i < size)
+	while (nb)
 	{
-		if (nb % 2 != 0)
-		{
 			nb = nb / 2;
 			len++;
-		}
-		i++;
 	}
+
 	return len;
 }
