@@ -1,13 +1,13 @@
 #include "../push_swap.h"
 
-void remove_back(Node **listInit)
+void	remove_back(Node **listInit)
 {
-	Node *aux;
-	int i;
-	int list_size;
+	Node	*aux;
+	int	list_size;
+	int	i;
 
 	aux = *listInit;
-	list_size = get_list_size(listInit);
+	list_size = get_list_size(*listInit);
 	i = 0;
 	if (!list_size)
 		return;
