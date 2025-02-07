@@ -16,10 +16,10 @@ void	sort_list(Node **list_a, int size, int binary)
 		index = aux->index;
 		bit = (index >> binary) & 1;
 		if (bit == 0)
-			push(list_a, &list_b, 'a');
+			push(list_a, &list_b, 'b');
 		if (bit == 1)
 			rotate(list_a, 'a');
 		aux = aux->next;
 	}
-	push_all(&list_b, list_a, 'b');
+	push_all(&list_b, list_a, 'a');
 }

@@ -20,7 +20,6 @@ void sort_small_stack(Node **list_a)
 				swap(list_a, 'a');
 			else if(aux->value < aux->next->value)
 				reverse_rotate(list_a, 'a');
-			aux = aux->next;
 			aux = *list_a;
 			i++;
 		}

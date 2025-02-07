@@ -29,9 +29,7 @@ void push_all(Node **list1, Node **list2, char c);
 
 void	indexStack(Node **list);
 
-Node *get_last_node(Node **listInit);
-
-Node *get_first_node(Node **listInit);
+int	get_node_index(Node *list, int index);
 
 int get_list_size(Node *listInit);
 
@@ -66,6 +64,8 @@ int create_stack(int size, char **str, Node **list);
 //============SORT===========================
 
 void	sort_small_stack(Node **list_a);
+
+void	sort_medium_stack(Node **list);
 
 //==============RADIX=========================
 
