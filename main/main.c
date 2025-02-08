@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
 	indexStack(&list);
 	size = get_list_size(list);
 	if (size <= 3)
-		sort_small_stack(&list);
+		sort_small_stack(&list, size);
 	else if (size <= 5)
-		sort_medium_stack(&list);
+		sort_medium_stack(&list, size);
 	else
 		radix_sort(&list, size);
 	print_list(&list);
