@@ -63,9 +63,9 @@ int create_stack(int size, char **str, Node **list);
 
 //============SORT===========================
 
-void	sort_small_stack(Node **list_a);
+void	sort_small_stack(Node **list_a, int size);
 
-void	sort_medium_stack(Node **list);
+void	sort_medium_stack(Node **list, int	size);
 
 //==============RADIX=========================
 
@@ -82,5 +82,8 @@ int	is_sorted(Node *list);
 int	is_bigger(Node *list);
 
 void	sort_list(Node **list_a, int size, int binary);
+
+int	sort_medium_list(Node **list, Node **list_b, int size);
+
 
 #endif
