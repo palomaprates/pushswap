@@ -1,15 +1,13 @@
 #include "../push_swap.h"
 
-void sort_small_stack(Node **list_a)
+void sort_small_stack(Node **list_a, int size)
 {
 	Node	*aux;
 	int index;
 	int	i;
-	int	size;
 
 	aux = *list_a;
 	i = 0;
-	size = get_list_size(*list_a);
 		while (i < size)
 		{
 			if (!aux->next)
