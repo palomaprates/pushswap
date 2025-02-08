@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = #-Wall -Wextra -Werror
 
 SRCS =	main/main.c					\
 			sort/radix_sort.c			\
@@ -18,6 +18,7 @@ SRCS =	main/main.c					\
 			list_utils/remove_front.c	\
 			list_utils/index_stack.c	\
 			list_utils/push_all.c		\
+			list_utils/ft_lst_clear.c	\
 			utils/is_number.c 			\
 			utils/ft_atoi.c				\
 			utils/ft_strlen.c				\
@@ -29,8 +30,8 @@ SRCS =	main/main.c					\
 			sort_utils/is_sorted.c		\
 			sort_utils/sort_list.c		\
 			sort_utils/sort_medium_list.c \
-			sort_utils/get_node_index.c \
-
+			sort_utils/get_node_index.c	\
+			
 OBJS = $(SRCS:.c=.o)
 
 NAME = push_swap

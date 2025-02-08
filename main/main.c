@@ -4,17 +4,16 @@ int	main(int argc, char *argv[])
 {
 	int	size;
 	Node	*list;
+	Node	*listB;
 
 	list = NULL;
+	listB = NULL;
 	if (argc <= 1)
-	{
-		printf("Error\n");
 		return (0);
-	}
 	if (!create_stack(argc, argv, &list))
 	{
-		printf("Error\n");
-		//clean list
+		write(2, "Error\n", 7);
+		ft_lstclear(&list);
 		return (0);
 	}
 	indexStack(&list);
@@ -25,6 +24,5 @@ int	main(int argc, char *argv[])
 		sort_medium_stack(&list, size);
 	else
 		radix_sort(&list, size);
-	print_list(&list);
-	//clean list
+	ft_lstclear(&list);
 }

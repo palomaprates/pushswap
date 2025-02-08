@@ -3,12 +3,16 @@
 int	sort_medium_list(Node **list, Node **list_b, int size)
 {
 	Node	*aux;
+	Node	*next;
 	int	less;
 	
 	aux = *list;
 	less = 0;
 	while (size > 2)
 	{
+		if (!aux)
+			return -1;
+		next = aux->next;
 		if (aux->index == less)
 		{
 			push(list, list_b, 'b');

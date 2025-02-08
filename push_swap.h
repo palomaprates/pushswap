@@ -35,6 +35,8 @@ int	get_node_index(Node *list, int index);
 
 int	get_list_size(Node *listInit);
 
+void	ft_lstclear(Node **list);
+
 /*==========================UTILS=========================*/
 
 long long	ft_atoi(const char *str);

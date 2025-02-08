@@ -3,11 +3,11 @@
 void	remove_front(Node **listInit)
 {
 	Node	*aux;
-	aux = *listInit;
 
-	if (aux)
-	{
-		aux = aux->next;
-		*listInit = aux;
-	}
+	if (!*listInit)
+		return;
+
+	aux = *listInit;
+	*listInit = (*listInit)->next;
+	free(aux); 
 }
