@@ -1,6 +1,6 @@
 #include "../push_swap.h"
 
-int get_bigger(Node *list_a, int size)
+int	get_bigger(Node *list_a, int size)
 {
 	int	i;
 	int	bigger;

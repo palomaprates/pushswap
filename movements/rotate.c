@@ -1,10 +1,9 @@
 #include "../push_swap.h"
 
-void rotate(Node **listInit, char c)
+void	rotate(Node **listInit, char c)
 {
-	Node *aux;
-	int first;
-	int last;
+	Node	*aux;
+
 	aux = *listInit;
 	remove_front(listInit);
 	add_back(listInit, aux->value, aux->index);

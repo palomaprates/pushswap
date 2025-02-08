@@ -1,6 +1,6 @@
 #include "../push_swap.h"
 
-void reverse_rotate(Node **listInit, char c)
+void	reverse_rotate(Node **listInit, char c)
 {
 	Node	*aux;
 	int	i;

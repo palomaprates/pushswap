@@ -1,6 +1,6 @@
 #include "../push_swap.h"
 
-int is_bigger(Node *list)
+int	is_bigger(Node *list)
 {
 	int	size; 
 	int	i;
@@ -12,7 +12,7 @@ int is_bigger(Node *list)
 	i = 0;
 	while (i < size)
 	{
-		if(current > list->index)
+		if (current > list->index)
 			return (1);
 		list = list->next;
 		i++;

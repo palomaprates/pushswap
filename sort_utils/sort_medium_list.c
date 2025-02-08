@@ -2,8 +2,8 @@
 
 int	sort_medium_list(Node **list, Node **list_b, int size)
 {
-	Node *aux;
-	int less;
+	Node	*aux;
+	int	less;
 	
 	aux = *list;
 	less = 0;
@@ -25,5 +25,5 @@ int	sort_medium_list(Node **list, Node **list_b, int size)
 		}
 		aux = *list;
 	}
-	return aux->index;
+	return (aux->index);
 }

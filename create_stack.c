@@ -1,9 +1,9 @@
 #include "push_swap.h"
 
-int create_stack(int size, char **argv, Node **list)
+int	create_stack(int size, char **argv, Node **list)
 {
-	int i;
-	long long result;
+	int	i;
+	long long	result;
 
 	i = 1;
 	while (i < size)

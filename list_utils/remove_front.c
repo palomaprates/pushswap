@@ -1,8 +1,8 @@
 #include "../push_swap.h"
 
-void remove_front(Node **listInit)
+void	remove_front(Node **listInit)
 {
-	Node *aux;
+	Node	*aux;
 	aux = *listInit;
 
 	if (aux)

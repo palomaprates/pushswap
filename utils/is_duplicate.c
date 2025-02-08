@@ -2,7 +2,7 @@
 
 int	is_duplicate(char **argv, int index)
 {
-	int current;
+	int	current;
 
 	current = index;
 	while (argv[index + 1])

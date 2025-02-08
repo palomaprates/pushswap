@@ -1,11 +1,12 @@
 #include "../push_swap.h"
 
-void push(Node **list, Node **listB, char c)
+void	push(Node **list, Node **listB, char c)
 {
-	Node *aux;
+	Node	*aux;
+
 	aux = *list;
 	if (!*list)
-		return;
+		return ;
 	remove_front(list);
 	add_front(listB, aux->value, aux->index);
 	write(1, "p", 1);

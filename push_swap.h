@@ -6,34 +6,36 @@
 #include <unistd.h>
 #include <limits.h>
 
-typedef struct node
+typedef	struct node
 {
-	int value;
-	int index;
-	struct node *next;
+	int	value;
+	int	index;
+	struct node	*next;
 }Node;
 
-// ==========LIST UTILS==================
+/*======================LIST UTILS==================*/ 
 
-void add_back(Node **list, int value, int index);
+void	add_back(Node **list, int value, int index);
 
-void add_front(Node **listInit, int value, int index);
+void	add_front(Node **listInit, int value, int index);
 
-void print_list(Node **listInit);
+Node	*create_node(int value, int index);
 
-void remove_back(Node **listInit);
+void	print_list(Node **listInit);
 
-void remove_front(Node **listInit);
+void	remove_back(Node **listInit);
 
-void push_all(Node **list1, Node **list2, char c);
+void	remove_front(Node **listInit);
+
+void	push_all(Node **list1, Node **list2, char c);
 
 void	indexStack(Node **list);
 
 int	get_node_index(Node *list, int index);
 
-int get_list_size(Node *listInit);
+int	get_list_size(Node *listInit);
 
-//==========UTILS=========================
+/*==========================UTILS=========================*/
 
 long long	ft_atoi(const char *str);
 
@@ -45,33 +47,29 @@ int	is_str_number(char *str);
 
 int	is_duplicate(char **argv, int index);
 
-int	get_binary_len(int nb);
+/*========================MOVEMENTS=======================*/
 
-//==========MOVEMENTS=====================
+void	push(Node **list, Node **listB, char c);
 
-void push(Node **list, Node **listB, char c);
+void	rotate(Node **list, char c);
 
-void rotate(Node **list, char c);
+void	reverse_rotate(Node **listInit, char c);
 
-void reverse_rotate(Node **listInit, char c);
+void	swap(Node **listInit, char c);
 
-void swap(Node **listInit, char c);
+/*========================STACK===========================*/
 
-//===========STACK=========================
+int	create_stack(int size, char **str, Node **list);
 
-int create_stack(int size, char **str, Node **list);
-
-//============SORT===========================
+/*=========================SORT===========================*/
 
 void	sort_small_stack(Node **list_a, int size);
 
 void	sort_medium_stack(Node **list, int	size);
 
-//==============RADIX=========================
-
 void	radix_sort(Node **list_a, int size);
 
-//==============SORT UTILS====================
+/*=======================SORT UTILS=======================*/
 
 int	get_bigger(Node *list_a, int size);
 
@@ -84,6 +82,5 @@ int	is_bigger(Node *list);
 void	sort_list(Node **list_a, int size, int binary);
 
 int	sort_medium_list(Node **list, Node **list_b, int size);
-
 
 #endif

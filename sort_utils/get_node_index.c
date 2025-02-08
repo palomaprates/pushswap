@@ -10,9 +10,9 @@ int	get_node_index(Node *list, int index)
 	while (i < size)
 	{
 		if (i == index)
-			return list->index;
+			return (list->index);
 		i++;
 		list = list->next;
 	}
-	return -1;
+	return (-1);
 }

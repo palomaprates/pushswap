@@ -18,7 +18,7 @@ void	remove_back(Node **listInit)
 		if (i == list_size - 2)
 		{
 			aux->next = NULL;
-			return;
+			return ;
 		}
 		aux = aux->next;
 		i++;

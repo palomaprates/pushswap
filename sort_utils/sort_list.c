@@ -2,16 +2,16 @@
 
 void	sort_list(Node **list_a, int size, int binary)
 {
-	int j;
-	int bit;
-	int index;
-	Node *aux;
-	Node *list_b;
+	int	i;
+	int	bit;
+	int	index;
+	Node	*aux;
+	Node	*list_b;
 
-	j = -1;
+	i = -1;
 	aux = *list_a;
 	list_b = NULL;
-	while (++j < size)
+	while (++i < size)
 	{
 		index = aux->index;
 		bit = (index >> binary) & 1;

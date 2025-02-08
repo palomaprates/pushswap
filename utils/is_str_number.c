@@ -1,8 +1,8 @@
 #include "../push_swap.h"
 
-int is_str_number(char *str)
+int	is_str_number(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (str[0] == '-' || str[0] == '+')
