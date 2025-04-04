@@ -6,11 +6,20 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:59 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/04 16:04:51 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 17:58:03 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
+
+void make_movements(t_node **list, int size, int less)
+{
+	if (get_node_index(*list, size - 1) == less || \
+		get_node_index(*list, size - 2) == less)
+				reverse_rotate(list, 'a');
+	else
+		rotate(list, 'a');
+}
 
 int	sort_medium_list(t_node **list, t_node **list_b, int size)
 {
@@ -30,13 +39,7 @@ int	sort_medium_list(t_node **list, t_node **list_b, int size)
 			size--;
 		}
 		else
-		{
-			if (get_node_index(*list, size - 1) == less || \
-			get_node_index(*list, size - 2) == less)
-				reverse_rotate(list, 'a');
-			else
-				rotate(list, 'a');
-		}
+			make_movements(list, size, less);
 		aux = *list;
 	}
 	return (aux->index);
