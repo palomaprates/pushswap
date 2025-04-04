@@ -6,7 +6,7 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:07 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:39:08 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:36:02 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	while(str[i])
+	while (str[i])
 		i++;
 	return (i);
 }
