@@ -6,7 +6,7 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:45:09 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 14:52:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ void	add_back(Node **list, int value, int index);
 void	add_front(Node **listInit, int value, int index);
 
 Node	*create_node(int value, int index);
-
-void	print_list(Node **listInit);
 
 void	remove_back(Node **listInit);
 

@@ -6,7 +6,7 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:04 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:39:05 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:01:59 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 long long	ft_atoi(const char *str)
 {
-	int	i;
 	long long	nbr;
-	int	negative_sign;
+	int			i;
+	int			negative_sign;
 
 	i = 0;
 	nbr = 0;

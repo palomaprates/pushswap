@@ -6,7 +6,7 @@
 #    By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/03 10:39:32 by pprates-          #+#    #+#              #
-#    Updated: 2025/04/03 10:39:33 by pprates-         ###   ########.fr        #
+#    Updated: 2025/04/04 14:52:10 by pprates-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,6 @@ SRCS =	main/main.c					\
 			list_utils/add_back.c		\
 			list_utils/add_front.c		\
 			list_utils/get_list_size.c	\
-			list_utils/print_list.c		\
 			list_utils/remove_back.c	\
 			list_utils/remove_front.c	\
 			list_utils/index_stack.c	\

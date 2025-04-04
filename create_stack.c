@@ -6,7 +6,7 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:21 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:39:22 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 14:54:59 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	create_stack(int size, char **argv, Node **list)
 {
-	int	i;
 	long long	result;
+	int			i;
 
 	i = 1;
 	while (i < size)
 	{
-		if (argv[i][0] == '\0')
+		if (argv[i][0] == '\0' || is_duplicate(argv, i))
 		{
 			ft_lstclear(list);
 			return (0);
@@ -31,11 +31,6 @@ int	create_stack(int size, char **argv, Node **list)
 			return (0);
 		}
 		result = ft_atoi(argv[i]);
-		if (is_duplicate(argv, i))
-		{
-			ft_lstclear(list);
-			return (0);
-		}
 		if (result > INT_MAX || result < INT_MIN)
 			return (0);
 		add_back(list, result, 0);
