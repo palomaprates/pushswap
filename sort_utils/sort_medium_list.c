@@ -6,7 +6,7 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:59 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 16:04:51 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	sort_medium_list(t_node **list, t_node **list_b, int size)
 {
 	t_node	*aux;
-	t_node	*next;
 	int		less;
 
 	aux = *list;
@@ -24,7 +23,6 @@ int	sort_medium_list(t_node **list, t_node **list_b, int size)
 	{
 		if (!aux)
 			return (-1);
-		next = aux->next;
 		if (aux->index == less)
 		{
 			push(list, list_b, 'b');
@@ -33,7 +31,8 @@ int	sort_medium_list(t_node **list, t_node **list_b, int size)
 		}
 		else
 		{
-			if (get_node_index(*list, size - 1) == less || get_node_index(*list, size - 2) == less)
+			if (get_node_index(*list, size - 1) == less || \
+			get_node_index(*list, size - 2) == less)
 				reverse_rotate(list, 'a');
 			else
 				rotate(list, 'a');
