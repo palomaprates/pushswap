@@ -6,7 +6,7 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/04 15:26:05 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:31:49 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,6 @@ void	ft_lstclear(t_node **list);
 
 /*==========================UTILS=========================*/
 
-long long	ft_atoi(const char *str);
-
 int		ft_strlen(char *str);
 
 int		is_number(int c);
@@ -57,6 +55,8 @@ int		is_number(int c);
 int		is_str_number(char *str);
 
 int		is_duplicate(char **argv, int index);
+
+long long	ft_atoi(const char *str);
 
 /*========================MOVEMENTS=======================*/
 
