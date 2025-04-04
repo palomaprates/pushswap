@@ -1,7 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
+/*   Updated: 2025/04/03 10:45:09 by pprates-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PUSH_SWAP_H
 #define PUSH_SWAP_H
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <limits.h>
@@ -29,7 +40,7 @@ void	remove_front(Node **listInit);
 
 void	push_all(Node **list1, Node **list2, char c);
 
-void	indexStack(Node **list);
+void	index_stack(Node **list);
 
 int	get_node_index(Node *list, int index);
 

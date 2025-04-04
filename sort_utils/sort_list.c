@@ -1,12 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_list.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/03 10:38:56 by pprates-          #+#    #+#             */
+/*   Updated: 2025/04/03 11:02:55 by pprates-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../push_swap.h"
 
 void	sort_list(Node **list_a, int size, int binary)
 {
-	int	i;
-	int	bit;
-	int	index;
 	Node	*aux;
 	Node	*list_b;
+	int		i;
+	int		bit;
+	int		index;
 
 	i = -1;
 	aux = *list_a;
@@ -15,7 +27,7 @@ void	sort_list(Node **list_a, int size, int binary)
 	{
 		aux = *list_a;
 		if (!aux)
-			break;
+			break ;
 		index = aux->index;
 		bit = (index >> binary) & 1;
 		if (bit == 0)

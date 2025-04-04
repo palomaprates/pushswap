@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_medium_stack.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/03 10:38:23 by pprates-          #+#    #+#             */
+/*   Updated: 2025/04/03 11:00:47 by pprates-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../push_swap.h"
 
 void	sort_medium_stack(Node **list, int size)
 {
 	Node	*list_b;
-	int	current_index;
-	Node *aux;
+	Node	*aux;
+	int		current_index;
 
 	list_b = NULL;
 	if (is_sorted(*list))

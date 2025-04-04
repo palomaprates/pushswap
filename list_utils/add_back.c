@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   add_back.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/03 10:36:42 by pprates-          #+#    #+#             */
+/*   Updated: 2025/04/03 10:42:17 by pprates-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../push_swap.h"
 
 void	add_back(Node **list, int value, int index)
 {
 	Node	*aux;
 	Node	*new;
-	int	i;
-	int	list_size;
+	int		i;
+	int		list_size;
 
 	i = -1;
 	list_size = get_list_size(*list);

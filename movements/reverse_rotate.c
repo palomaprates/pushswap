@@ -1,15 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   reverse_rotate.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/03 10:37:51 by pprates-          #+#    #+#             */
+/*   Updated: 2025/04/03 10:58:05 by pprates-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../push_swap.h"
 
 void	reverse_rotate(Node **listInit, char c)
 {
 	Node	*aux;
-	int	i;
-	int	size;
+	int		i;
+	int		size;
 
 	aux = *listInit;
 	i = 0;
 	size = get_list_size(*listInit);
-
 	while (i < size)
 	{
 		if (i == size - 1)

@@ -1,13 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/03 10:37:43 by pprates-          #+#    #+#             */
+/*   Updated: 2025/04/03 10:57:13 by pprates-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../push_swap.h"
 
 int	main(int argc, char *argv[])
 {
-	int	size;
 	Node	*list;
-	Node	*listB;
+	Node	*list_b;
+	int		size;
 
 	list = NULL;
-	listB = NULL;
+	list_b = NULL;
 	if (argc <= 1)
 		return (0);
 	if (!create_stack(argc, argv, &list))
@@ -16,7 +28,7 @@ int	main(int argc, char *argv[])
 		ft_lstclear(&list);
 		return (0);
 	}
-	indexStack(&list);
+	index_stack(&list);
 	size = get_list_size(list);
 	if (size <= 3)
 		sort_small_stack(&list, size);
