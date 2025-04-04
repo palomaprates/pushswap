@@ -6,13 +6,13 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:17 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 11:00:31 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	radix_sort(Node **list, int size)
+void	radix_sort(t_node **list, int size)
 {
 	int	i;
 	int	bigger;

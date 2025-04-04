@@ -6,13 +6,13 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:21 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/04 14:54:59 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	create_stack(int size, char **argv, Node **list)
+int	create_stack(int size, char **argv, t_node **list)
 {
 	long long	result;
 	int			i;

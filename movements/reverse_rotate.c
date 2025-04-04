@@ -6,15 +6,15 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:51 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:58:05 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	reverse_rotate(Node **listInit, char c)
+void	reverse_rotate(t_node **listInit, char c)
 {
-	Node	*aux;
+	t_node	*aux;
 	int		i;
 	int		size;
 

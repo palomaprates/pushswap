@@ -6,16 +6,16 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:08 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:44:41 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	index_stack(Node **list)
+void	index_stack(t_node **list)
 {
-	Node	*aux1;
-	Node	*aux2;
+	t_node	*aux1;
+	t_node	*aux2;
 	int	rank;
 
 	aux1 = *list;

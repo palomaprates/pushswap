@@ -6,15 +6,15 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:47 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:57:39 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	push(Node **list, Node **listB, char c)
+void	push(t_node **list, t_node **listB, char c)
 {
-	Node	*aux;
+	t_node	*aux;
 
 	aux = *list;
 	if (!*list)

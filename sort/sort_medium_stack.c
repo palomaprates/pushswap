@@ -6,16 +6,16 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:23 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 11:00:47 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	sort_medium_stack(Node **list, int size)
+void	sort_medium_stack(t_node **list, int size)
 {
-	Node	*list_b;
-	Node	*aux;
+	t_node	*list_b;
+	t_node	*aux;
 	int		current_index;
 
 	list_b = NULL;

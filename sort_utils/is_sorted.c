@@ -6,13 +6,13 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:53 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:38:54 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int	is_sorted(Node *list)
+int	is_sorted(t_node *list)
 {
 	int	size;
 	int	i;

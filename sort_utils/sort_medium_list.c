@@ -6,16 +6,16 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:59 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/04 14:57:17 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int	sort_medium_list(Node **list, Node **list_b, int size)
+int	sort_medium_list(t_node **list, t_node **list_b, int size)
 {
-	Node	*aux;
-	Node	*next;
+	t_node	*aux;
+	t_node	*next;
 	int		less;
 
 	aux = *list;

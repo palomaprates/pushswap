@@ -6,15 +6,15 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:34 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 11:01:06 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	sort_small_stack(Node **list_a, int size)
+void	sort_small_stack(t_node **list_a, int size)
 {
-	Node	*aux;
+	t_node	*aux;
 	int		i;
 
 	aux = *list_a;

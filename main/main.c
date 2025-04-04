@@ -6,7 +6,7 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:43 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:57:13 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	main(int argc, char *argv[])
 {
-	Node	*list;
-	Node	*list_b;
+	t_node	*list;
+	t_node	*list_b;
 	int		size;
 
 	list = NULL;

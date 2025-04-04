@@ -6,16 +6,16 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:56 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 11:02:55 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	sort_list(Node **list_a, int size, int binary)
+void	sort_list(t_node **list_a, int size, int binary)
 {
-	Node	*aux;
-	Node	*list_b;
+	t_node	*aux;
+	t_node	*list_b;
 	int		i;
 	int		bit;
 	int		index;

@@ -6,15 +6,15 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:02 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:59:34 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	swap(Node **listInit, char c)
+void	swap(t_node **listInit, char c)
 {
-	Node	*aux;
+	t_node	*aux;
 	int		temp;
 	int		temp_index;
 

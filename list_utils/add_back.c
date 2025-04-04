@@ -6,16 +6,16 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:36:42 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/03 10:42:17 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	add_back(Node **list, int value, int index)
+void	add_back(t_node **list, int value, int index)
 {
-	Node	*aux;
-	Node	*new;
+	t_node	*aux;
+	t_node	*new;
 	int		i;
 	int		list_size;
 
