@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/04 15:31:49 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/13 10:29:30 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ int		is_str_number(char *str);
 
 int		is_duplicate(char **argv, int index);
 
-long long	ft_atoi(const char *str);
+long int	ft_atoi(const char *str);
 
 /*========================MOVEMENTS=======================*/
 
