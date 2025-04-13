@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:43 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/04 15:56:02 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/13 10:43:18 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 int	main(int argc, char *argv[])
 {
 	t_node	*list;
-	t_node	*list_b;
+	// t_node	*list_b;
 	int		size;
 
 	list = NULL;
-	list_b = NULL;
+	// list_b = NULL;
 	if (argc <= 1)
 		return (0);
 	if (!create_stack(argc, argv, &list))
