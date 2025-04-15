@@ -3,15 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   create_stack.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:21 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/04 16:54:45 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/13 20:04:27 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
+int	is_left_zero(char *str)
+{
+	int	left_zero;
+	
+	left_zero = 0;
+	while (str[left_zero] == '0')
+	{
+		left_zero++;
+	}
+	return (left_zero);
+}
+int	is_big_integer(char *str)
+{
+
+	if (ft_strlen(str) > 11 && is_left_zero(str) > 1)
+		return (0);
+	else if (ft_strlen(str) > 11 && is_left_zero(str) <= 1)
+		return (1);
+	return (0);
+}
 int	valid_number(char *str)
 {
 	int	i;
@@ -40,7 +60,7 @@ int	create_stack(int size, char **argv, t_node **list)
 			return (0);
 		}
 		if (!(is_str_number(argv[i])) || !valid_number(argv[i]) || \
-		ft_strlen(argv[i]) > 11)
+		is_big_integer(argv[i]))
 		{
 			ft_lstclear(list);
 			return (0);
