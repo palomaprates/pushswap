@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:04 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/13 10:29:50 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/15 14:39:58 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-long int	ft_atoi(const char *str)
+long long	ft_atoi(const char *str)
 {
 	long long	nbr;
 	int			i;

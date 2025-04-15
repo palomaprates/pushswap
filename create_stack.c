@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   create_stack.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:21 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/13 20:04:27 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/15 16:09:24 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,43 @@ int	valid_number(char *str)
 	}
 	return (1);
 }
+
+long long	get_number(char *str)
+{
+	int	i;
+	
+	i = 0;
+	while (str[i])
+	{
+
+		i++;
+	}
+}
+
+// char **new_argv(char **argv)
+// {
+// 	char **new_array;
+
+// 	int i;
+// 	int j; 
+
+// 	i = 0;
+// 	j = 0;
+// 	char **temp;
+// 	while (argv[i])
+// 	{
+// 		temp = ft_split(argv[i]);
+// 		while (argv[i][j])
+// 		{
+// 			new_array[i][j] = temp[i][j];
+// 			j++;
+// 		}
+// 		i++;
+// 		free(temp);
+// 	}
+// 	return (new_array)
+// }
+
 int	create_stack(int size, char **argv, t_node **list)
 {
 	long long	result;
@@ -73,3 +110,8 @@ int	create_stack(int size, char **argv, t_node **list)
 	}
 	return (1);
 }
+
+/*
+	se os numeros estiverem em um unico argumento, passar cada um dos numeros para result (sei que eh um
+	numero diferente do outro quando esta separado por espacos, nesse caso)
+*/

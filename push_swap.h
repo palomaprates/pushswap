@@ -6,7 +6,7 @@
 /*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/15 13:56:14 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/15 14:40:09 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,6 @@ int		is_number(int c);
 int		is_str_number(char *str);
 
 int		is_duplicate(char **argv, int index);
-
-long long	ft_atoi(const char *str);
 
 /*========================MOVEMENTS=======================*/
 
