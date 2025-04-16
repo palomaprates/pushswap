@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+         #
+#    By: paloma <paloma@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/03 10:39:32 by pprates-          #+#    #+#              #
-#    Updated: 2025/04/04 14:52:10 by pprates-         ###   ########.fr        #
+#    Updated: 2025/04/16 16:42:16 by paloma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,9 @@ SRCS =	main/main.c					\
 			utils/ft_strlen.c				\
 			utils/is_str_number.c		\
 			utils/is_duplicate.c			\
+			utils/ft_split.c				\
+			utils/ft_strlcpy.c			\
+			utils/ft_strdup.c				\
 			sort_utils/get_bigger.c		\
 			sort_utils/get_binary_len.c \
 			sort_utils/is_bigger.c		\
@@ -42,6 +45,7 @@ SRCS =	main/main.c					\
 			sort_utils/sort_list.c		\
 			sort_utils/sort_medium_list.c \
 			sort_utils/get_node_index.c	\
+			print_list.c					\
 			
 OBJS = $(SRCS:.c=.o)
 

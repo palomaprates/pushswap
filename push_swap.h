@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/16 08:52:59 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/16 16:55:08 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,12 @@ int			is_str_number(char *str);
 
 int			is_duplicate(char **argv, int index);
 
+char			**ft_split(char const *s, char c);
+
+size_t		ft_strlcpy(char *dest, const char *src, size_t dest_size);
+
+char			*ft_strdup(const char *s);
+
 /*========================MOVEMENTS=======================*/
 
 void		push(t_node **list, t_node **listB, char c);
@@ -70,7 +76,7 @@ void		swap(t_node **listInit, char c);
 
 /*========================STACK===========================*/
 
-int			create_stack(int size, char **str, t_node **list);
+int			create_stack(char **str, t_node **list);
 
 /*=========================SORT===========================*/
 
@@ -93,5 +99,8 @@ int			is_bigger(t_node *list);
 void		sort_list(t_node **list_a, int size, int binary);
 
 int			sort_medium_list(t_node **list, t_node **list_b, int size);
+
+
+void print_list(t_node **list_init);
 
 #endif

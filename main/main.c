@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:43 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/13 10:43:18 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/16 16:55:23 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(int argc, char *argv[])
 	// list_b = NULL;
 	if (argc <= 1)
 		return (0);
-	if (!create_stack(argc, argv, &list))
+	if (!create_stack(argv, &list))
 	{
 		write(2, "Error\n", 7);
 		ft_lstclear(&list);
@@ -36,5 +36,6 @@ int	main(int argc, char *argv[])
 		sort_medium_stack(&list, size);
 	else
 		radix_sort(&list, size);
+	print_list(&list);
 	ft_lstclear(&list);
 }
