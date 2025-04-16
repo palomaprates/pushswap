@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:43 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/16 16:55:23 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/16 21:01:48 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,6 @@ int	main(int argc, char *argv[])
 		sort_medium_stack(&list, size);
 	else
 		radix_sort(&list, size);
-	print_list(&list);
+	// print_list(&list);
 	ft_lstclear(&list);
 }
