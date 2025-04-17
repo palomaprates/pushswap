@@ -6,11 +6,11 @@
 #    By: paloma <paloma@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/03 10:39:32 by pprates-          #+#    #+#              #
-#    Updated: 2025/04/16 16:42:16 by paloma           ###   ########.fr        #
+#    Updated: 2025/04/16 21:33:28 by paloma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = #-Wall -Wextra -Werror
 
 SRCS =	main/main.c					\
 			sort/radix_sort.c			\

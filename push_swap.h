@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/16 16:55:08 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/16 21:31:09 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ void		swap(t_node **listInit, char c);
 
 /*========================STACK===========================*/
 
-int			create_stack(char **str, t_node **list);
+int			create_stack(int argc, char **str, t_node **list);
 
 /*=========================SORT===========================*/
 

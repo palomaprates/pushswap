@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:43 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/16 21:01:48 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/17 10:08:49 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,14 @@
 int	main(int argc, char *argv[])
 {
 	t_node	*list;
-	// t_node	*list_b;
 	int		size;
-
+	
 	list = NULL;
-	// list_b = NULL;
 	if (argc <= 1)
 		return (0);
-	if (!create_stack(argv, &list))
+	if (!create_stack(argc, argv, &list))
 	{
-		write(2, "Error\n", 7);
+		write(2, "Error\n", ft_strlen("Error\n"));
 		ft_lstclear(&list);
 		return (0);
 	}

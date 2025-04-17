@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:21 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/16 21:01:19 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/17 09:49:14 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ int	count_total_words(char **argv)
 	return (total);
 }
 
-char	**get_new_argv(char **argv)
+char	**get_new_argv(int argc, char **argv)
 {
 	char	**new_array;
 	char	**temp;
@@ -101,7 +101,7 @@ char	**get_new_argv(char **argv)
 	new_array = malloc(sizeof(char *) * count_total_words(argv) + 1);
 	if (!new_array)
 		return (NULL);
-	while (argv[i])
+	while (i < argc)
 	{
 		temp = ft_split(argv[i], ' ');
 		j = 0;
@@ -118,13 +118,13 @@ char	**get_new_argv(char **argv)
 	return (new_array);	
 }
 
-int	create_stack(char **argv, t_node **list)
+int	create_stack(int argc, char **argv, t_node **list)
 {
 	long long	result;
 	int			j = 0;
 	char		**temp;
 
-	temp = get_new_argv(argv);
+	temp = get_new_argv(argc, argv);
 	if (!temp)
 		return (0);
 	while (temp[j])

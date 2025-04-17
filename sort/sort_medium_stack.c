@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_medium_stack.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:23 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/04 15:20:28 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/17 14:07:01 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,26 @@ void	sort_medium_stack(t_node **list, int size)
 		swap(list, 'a');
 	push_all(&list_b, list, 'a');
 }
+// 2 4 1 3 5 
+
+
+// atual: (13 moves)
+
+// ra stack a 4 1 3 5 2
+// ra stack a 1 3 5 2 4
+// pb stackb 1
+// 		stack a 3 5 2 4
+// rra stack a  4 3 5 2 
+// rra stack a 2 4 3 5
+// pb 2
+// stack b 2 1
+// stack a 4 3 5
+
+// rra  5 4 3
+// rra  3 4 5
+// pb 3 
+// stack b 3 2 1
+// sa stack a 4 5
+// pa 3 4 5
+// pa 2 3 4 5
+// pa 1 2 3 4 5
