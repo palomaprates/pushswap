@@ -6,40 +6,46 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:21 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/17 09:49:14 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/18 16:20:31 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-// int	is_left_zero(char *str)
-// {
-// 	int	left_zero;
-	
-// 	left_zero = 0;
-// 	while (str[left_zero] == '0')
-// 	{
-// 		left_zero++;
-// 	}
-// 	return (left_zero);
-// }
-
-
+int	has_only_zero(char *str)
+{
+	int	i;
+	int	result;
+	int	count;
+	i = 0;
+	result = 0;
+	count = 0;
+	while (str[i] == '-' || str[i] == '+')
+	{
+		count++;
+		i++;
+	}
+	while (str[i])
+	{
+		if (str[i] == '0')
+			result++;
+		i++;
+	}
+	if (ft_strlen(str) - count  == result)
+		return (1);
+	return (0);
+}
 int	is_left_zero(char *str)
 {
-	int i = 0;
-
-	if (str[0] == '+' || str[0] == '-')
-		i++;
-	while (str[i] == '0')
-		i++;
-	if (str[i] == '\0')
-		return (0);
-	return (i - (str[0] == '+' || str[0] == '-'));
+	int	left_zero;
+	
+	left_zero = 0;
+	while (str[left_zero] == '0')
+		left_zero++;
+	return (left_zero);
 }
 int	is_big_integer(char *str)
 {
-
 	if (ft_strlen(str) > 11 && is_left_zero(str) > 1)
 		return (0);
 	else if (ft_strlen(str) > 11 && is_left_zero(str) <= 1)
@@ -48,8 +54,10 @@ int	is_big_integer(char *str)
 }
 int	valid_number(char *str)
 {
-	if ((str[0] == '+' || str[0] == '-') && \
-	str[1] == '0' && str[2] == '\0')
+	if (!*str || ((str[0] == '+' || str[0] == '-') && \
+	 (str[1] == '0' || !str[1]) && str[2] == '\0'))
+		return (0);
+	if ((str[0] == '+' || str[0] == '-') && has_only_zero(str))
 		return (0);
 	return (1);
 }
@@ -96,6 +104,7 @@ char	**get_new_argv(int argc, char **argv)
 	int	i;
 	int	j;
 	int	k;
+
 	i = 1;
 	k = 0;
 	new_array = malloc(sizeof(char *) * count_total_words(argv) + 1);
@@ -105,12 +114,10 @@ char	**get_new_argv(int argc, char **argv)
 	{
 		temp = ft_split(argv[i], ' ');
 		j = 0;
+		if (!temp[0])
+			return (free_split(temp), NULL);
 		while (temp[j])
-		{
-			new_array[k] = ft_strdup(temp[j]);
-			j++;
-			k++;
-		}
+			new_array[k++] = ft_strdup(temp[j++]);
 		free_split(temp);
 		i++;
 	}
@@ -122,7 +129,7 @@ int	create_stack(int argc, char **argv, t_node **list)
 {
 	long long	result;
 	int			j = 0;
-	char		**temp;
+	char			**temp;
 
 	temp = get_new_argv(argc, argv);
 	if (!temp)
