@@ -20,14 +20,15 @@ int	has_only_zero(char *str)
 			result++;
 		i++;
 	}
-	if (ft_strlen(str) - count  == result)
+	if (ft_strlen(str) - count == result)
 		return (1);
 	return (0);
 }
+
 int	is_left_zero(char *str)
 {
 	int	left_zero;
-	
+
 	left_zero = 0;
 	while (str[left_zero] == '0')
 		left_zero++;

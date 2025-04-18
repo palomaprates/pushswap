@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/18 17:06:08 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/18 17:16:24 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,9 @@ int			is_str_number(char *str);
 
 int			is_duplicate(char **argv, int index);
 
-char			**ft_split(char const *s, char c);
-
 size_t		ft_strlcpy(char *dest, const char *src, size_t dest_size);
+
+char			**ft_split(char const *s, char c);
 
 char			*ft_strdup(const char *s);
 

@@ -2,9 +2,11 @@
 
 void	free_split(char **arr)
 {
-	int	i = 0;
+	int	i;
+
+	i = 0;
 	if (!arr)
-		return;
+		return ;
 	while (arr[i])
 	{
 		free(arr[i]);
@@ -15,11 +17,13 @@ void	free_split(char **arr)
 
 int	count_total_words(char **argv)
 {
-	int		total = 0;
+	int		total;
 	char	**temp;
-	int		i = 1;
+	int		i;
 	int		j;
 
+	total = 0;
+	i = 1;
 	while (argv[i])
 	{
 		temp = ft_split(argv[i], ' ');

@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:21 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/18 17:11:20 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/18 17:27:17 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 int	create_stack(int argc, char **argv, t_node **list)
 {
 	long long	result;
-	int			j = 0;
+	int			j;
 	char			**temp;
 
 	temp = get_new_argv(argc, argv);
+	j = 0;
 	if (!temp)
 		return (0);
 	while (temp[j])
@@ -30,7 +31,7 @@ int	create_stack(int argc, char **argv, t_node **list)
 			return (0);
 		}
 		if (!(is_str_number(temp[j])) || !valid_number(temp[j]) || \
-			is_big_integer(temp[j]))
+is_big_integer(temp[j]))
 		{
 			free_split(temp);
 			ft_lstclear(list);
