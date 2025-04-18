@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_medium_list.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:59 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/04 17:58:03 by pprates-         ###   ########.fr       */
+/*   Updated: 2025/04/18 16:21:38 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,17 @@ int	sort_medium_list(t_node **list, t_node **list_b, int size)
 			return (-1);
 		if (aux->index == less)
 		{
+			if (get_list_size(*list_b) == 2)
+			{	
+				sort_small_stack(list, 3);
+				push_all(list_b, list, 'a');
+				return -1;
+			}
 			push(list, list_b, 'b');
 			less++;
 			size--;
 		}
-		else
+		else 
 			make_movements(list, size, less);
 		aux = *list;
 	}
