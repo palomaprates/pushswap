@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:43 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/18 16:20:55 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/18 16:26:23 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	main(int argc, char *argv[])
 {
 	t_node	*list;
 	int		size;
-	
+
 	list = NULL;
 	if (argc <= 1)
 		return (0);
