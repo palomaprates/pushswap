@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/18 17:16:24 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/19 14:14:54 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,9 +60,9 @@ int			is_duplicate(char **argv, int index);
 
 size_t		ft_strlcpy(char *dest, const char *src, size_t dest_size);
 
-char			**ft_split(char const *s, char c);
+char		**ft_split(char const *s, char c);
 
-char			*ft_strdup(const char *s);
+char		*ft_strdup(const char *s);
 
 /*========================MOVEMENTS=======================*/
 
@@ -78,11 +78,11 @@ void		swap(t_node **listInit, char c);
 
 int			create_stack(int argc, char **str, t_node **list);
 
-void			free_split(char **arr);
+void		free_split(char **arr);
 
 int			count_total_words(char **argv);
 
-char			**get_new_argv(int argc, char **argv);
+char		**get_new_argv(int argc, char **argv);
 
 /*=========================SORT===========================*/
 

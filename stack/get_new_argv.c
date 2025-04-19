@@ -45,9 +45,9 @@ char	**get_new_argv(int argc, char **argv)
 {
 	char	**new_array;
 	char	**temp;
-	int	i;
-	int	j;
-	int	k;
+	int		i;
+	int		j;
+	int		k;
 
 	i = 1;
 	k = 0;
@@ -66,5 +66,5 @@ char	**get_new_argv(int argc, char **argv)
 		i++;
 	}
 	new_array[k] = NULL;
-	return (new_array);	
+	return (new_array);
 }

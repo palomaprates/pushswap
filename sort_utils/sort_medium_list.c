@@ -6,19 +6,19 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:59 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/18 16:31:16 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/19 10:13:52 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	make_movements(t_node **list, int size, int less)
+static void	make_movements(t_node **list, int less)
 {
-	if (get_node_index(*list, size - 1) == less || \
-get_node_index(*list, size - 2) == less)
-		reverse_rotate(list, 'a');
-	else
+	if (get_node_index(*list, 0) == less || \
+get_node_index(*list, 1) == less)
 		rotate(list, 'a');
+	else
+		reverse_rotate(list, 'a');
 }
 
 int	sort_medium_list(t_node **list, t_node **list_b, int size)
@@ -28,7 +28,7 @@ int	sort_medium_list(t_node **list, t_node **list_b, int size)
 
 	aux = *list;
 	less = 0;
-	while (size > 2)
+	while (1)
 	{
 		if (!aux)
 			return (-1);
@@ -42,10 +42,9 @@ int	sort_medium_list(t_node **list, t_node **list_b, int size)
 			}
 			push(list, list_b, 'b');
 			less++;
-			size--;
 		}
 		else
-			make_movements(list, size, less);
+			make_movements(list, less);
 		aux = *list;
 	}
 	return (aux->index);
