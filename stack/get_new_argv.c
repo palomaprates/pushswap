@@ -10,8 +10,17 @@ void	free_split(char **arr)
 	while (arr[i])
 	{
 		free(arr[i]);
+		arr[i] = NULL;
 		i++;
 	}
+	free(arr);
+	arr = NULL;
+}
+void	free_partial(char **arr, int filled)
+{
+	int i = 0;
+	while (i < filled)
+		free(arr[i++]);
 	free(arr);
 }
 
@@ -51,17 +60,33 @@ char	**get_new_argv(int argc, char **argv)
 
 	i = 1;
 	k = 0;
-	new_array = malloc(sizeof(char *) * count_total_words(argv) + 1);
+	new_array = malloc(sizeof(char *) * (count_total_words(argv) + 1));
 	if (!new_array)
 		return (NULL);
 	while (i < argc)
 	{
 		temp = ft_split(argv[i], ' ');
 		j = 0;
+		if (!temp)
+			return (NULL);
 		if (!temp[0])
-			return (free_split(temp), NULL);
+		{
+			free_split(temp);
+			free(new_array);
+			return (NULL);
+		}
 		while (temp[j])
-			new_array[k++] = ft_strdup(temp[j++]);
+		{
+			new_array[k] = ft_strdup(temp[j]);
+			if (!new_array[k])
+			{
+				free_split(temp);
+				free_partial(new_array, k);
+				return (NULL);
+			}
+			j++;
+			k++;
+		}
 		free_split(temp);
 		i++;
 	}
