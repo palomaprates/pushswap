@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/19 14:14:54 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/29 11:32:23 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,16 +74,6 @@ void		reverse_rotate(t_node **listInit, char c);
 
 void		swap(t_node **listInit, char c);
 
-/*========================STACK===========================*/
-
-int			create_stack(int argc, char **str, t_node **list);
-
-void		free_split(char **arr);
-
-int			count_total_words(char **argv);
-
-char		**get_new_argv(int argc, char **argv);
-
 /*=========================SORT===========================*/
 
 void		sort_small_stack(t_node **list_a, int size);
@@ -115,5 +105,19 @@ int			is_left_zero(char *str);
 int			is_big_integer(char *str);
 
 int			valid_number(char *str);
+
+/*=============================STACK===========================*/
+
+int			create_stack(int argc, char **str, t_node **list);
+
+char		**get_splited_argv(int argc, char **argv);
+
+/*===========================STACK UTILS======================*/
+
+int			count_total_words(char **argv);
+
+void		free_split(char **arr);
+
+void		free_partial(char **arr, int filled);
 
 #endif
