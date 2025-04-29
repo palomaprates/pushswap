@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:21 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/19 14:10:21 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/28 15:10:43 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	create_stack(int argc, char **argv, t_node **list)
 	long long		result;
 	int				j;
 
-	temp = get_new_argv(argc, argv);
+	temp = get_splited_argv(argc, argv);
 	j = 0;
 	if (!temp)
 		return (0);

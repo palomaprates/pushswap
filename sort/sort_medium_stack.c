@@ -6,7 +6,7 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:23 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/19 13:57:23 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/29 11:48:03 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,35 @@ int	sort_three(t_node **list, t_node **list_b)
 		return (1);
 	}
 	return (0);
+}
+
+int	sort_medium_list(t_node **list, t_node **list_b, int size)
+{
+	t_node	*aux;
+	int		less;
+
+	aux = *list;
+	less = 0;
+	while (1)
+	{
+		if (!aux)
+			return (-1);
+		if (aux->index == less)
+		{
+			if (get_list_size(*list_b) == 2)
+			{
+				sort_small_stack(list, 3);
+				push_all(list_b, list, 'a');
+				return (-1);
+			}
+			push(list, list_b, 'b');
+			less++;
+		}
+		else
+			make_movements(list, less);
+		aux = *list;
+	}
+	return (aux->index);
 }
 
 void	sort_medium_stack(t_node **list, int size)

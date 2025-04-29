@@ -6,24 +6,11 @@
 /*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:43 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/19 14:12:59 by paloma           ###   ########.fr       */
+/*   Updated: 2025/04/29 11:41:54 by paloma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
-
-// #include <stdio.h>
-
-// void print_list(t_node **list_init)
-// {
-// 	t_node *aux;
-// 	aux = *list_init;
-// 	while(aux)
-// 	{
-// 		printf("%d\n", aux->value);
-// 		aux = aux->next;
-// 	}
-// }
 
 int	main(int argc, char *argv[])
 {
@@ -47,6 +34,5 @@ int	main(int argc, char *argv[])
 		sort_medium_stack(&list, size);
 	else
 		radix_sort(&list, size);
-		// print_list(&list);
 	ft_lstclear(&list);
 }
