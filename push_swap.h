@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:39:48 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/29 11:32:23 by paloma           ###   ########.fr       */
+/*   Updated: 2025/05/03 15:03:57 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ void		swap(t_node **listInit, char c);
 
 void		sort_small_stack(t_node **list_a, int size);
 
-void		sort_medium_stack(t_node **list, int size);
+void		sort_medium_stack(t_node **list);
 
 void		radix_sort(t_node **list_a, int size);
 
@@ -94,7 +94,7 @@ int			is_bigger(t_node *list);
 
 void		sort_list(t_node **list_a, int size, int binary);
 
-int			sort_medium_list(t_node **list, t_node **list_b, int size);
+int			sort_medium_list(t_node **list, t_node **list_b);
 
 /*===========================CHECK ERRORS===================*/
 

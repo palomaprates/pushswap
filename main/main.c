@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:37:43 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/29 11:41:54 by paloma           ###   ########.fr       */
+/*   Updated: 2025/05/03 15:11:09 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	main(int argc, char *argv[])
 	if (size <= 3)
 		sort_small_stack(&list, size);
 	else if (size <= 5)
-		sort_medium_stack(&list, size);
+		sort_medium_stack(&list);
 	else
 		radix_sort(&list, size);
 	ft_lstclear(&list);

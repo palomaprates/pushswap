@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_medium_stack.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: paloma <paloma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 10:38:23 by pprates-          #+#    #+#             */
-/*   Updated: 2025/04/29 11:48:03 by paloma           ###   ########.fr       */
+/*   Updated: 2025/05/03 14:59:53 by pprates-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	sort_three(t_node **list, t_node **list_b)
 	return (0);
 }
 
-int	sort_medium_list(t_node **list, t_node **list_b, int size)
+int	sort_medium_list(t_node **list, t_node **list_b)
 {
 	t_node	*aux;
 	int		less;
@@ -60,7 +60,7 @@ int	sort_medium_list(t_node **list, t_node **list_b, int size)
 	return (aux->index);
 }
 
-void	sort_medium_stack(t_node **list, int size)
+void	sort_medium_stack(t_node **list)
 {
 	t_node	*list_b;
 	t_node	*aux;

@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: paloma <paloma@student.42.fr>              +#+  +:+       +#+         #
+#    By: pprates- <pprates-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/03 10:39:32 by pprates-          #+#    #+#              #
-#    Updated: 2025/04/29 11:47:17 by paloma           ###   ########.fr        #
+#    Updated: 2025/05/03 15:22:28 by pprates-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CFLAGS = #-Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 SRCS =	main/main.c								\
 			sort/radix_sort.c						\
